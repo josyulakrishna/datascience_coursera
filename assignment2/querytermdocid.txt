@@ -1,0 +1,1 @@
+select a.docid,b.docid,sum(a.count*b.count) from frequency a, assi b where a.term=b.term group by a.docid order by sum(a.count*b.count) desc;
